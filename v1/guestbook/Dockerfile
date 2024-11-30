@@ -32,6 +32,14 @@ FROM ubuntu:18.04
 <Please fill in the required Docker command> public/jquery.min.js /app/public/jquery.min.js
 
 WORKDIR /app
+COPY public/index.html /app/public/index.html
+COPY public/script.js /app/public/script.js
+COPY public/style.css /app/public/style.css
+COPY public/jquery.min.js /app/public/jquery.min.js
 
+# Make port 3000 available to the world outside this container
+EXPOSE 3000
+
+# Run the application when the container launches
 CMD ["./guestbook"]
 <Please fill in the required Docker command> 3000
