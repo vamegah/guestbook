@@ -20,7 +20,7 @@ spec:
         app: guestbook
     spec:
       containers:
-      - image: us.icr.io/<your sn labs namespace>/guestbook:v1
+      - image: us.icr.io/sn-labs-vamega13/guestbook:v1
         imagePullPolicy: Always
         name: guestbook
         ports:
@@ -31,4 +31,4 @@ spec:
             cpu: 50m
           requests:
             cpu: 20m  
-  replicas: 1
+  
